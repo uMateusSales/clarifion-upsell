@@ -8,13 +8,38 @@ const BadgesContainer = () => {
         <Image
           width={106}
           height={36}
+          quality={100}
           alt="clarifion logo"
           src="/clarifion-logo.png"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
         />
       </div>
       <div className=" flex flex-row gap-4 relative">
-        <Image width={80} height={16} alt="mcafee" src="/mcafee.png" />
-        <Image width={80} height={16} alt="norton" src="/norton.png" />
+        <Image
+          width={80}
+          height={16}
+          quality={100}
+          alt="mcafee"
+          src="/mcafee.png"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
+        />
+        <Image
+          width={80}
+          height={16}
+          quality={100}
+          alt="norton"
+          src="/norton.png"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
+        />
       </div>
     </div>
   );

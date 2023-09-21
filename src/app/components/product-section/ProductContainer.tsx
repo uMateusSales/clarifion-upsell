@@ -3,6 +3,7 @@ import PromoCard from "./PromoCard";
 import Image from "next/image";
 import ProductInfoContainer from "./ProductInfo";
 import ProductCheckList from "./ProductCheckList";
+import SavingsContainer from "./SavingsContainer";
 
 const ProductContainer: React.FC = () => {
   return (
@@ -15,13 +16,18 @@ const ProductContainer: React.FC = () => {
           width={320}
           height={320}
           quality={100}
-          layout="responsive"
           alt="product banner"
           src="/product-banner.png"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
         />
       </div>
       <ProductInfoContainer />
       <ProductCheckList />
+      <SavingsContainer />
     </section>
   );
 };

@@ -8,8 +8,12 @@ const ProductImageWithBack = () => {
         alt="product with blue bg"
         width={80}
         height={80}
-        layout="responsive"
         src="/product-with-bg.png"
+        sizes="100vw"
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
       />
     </div>
   );
