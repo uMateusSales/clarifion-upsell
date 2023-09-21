@@ -1,21 +1,18 @@
-import React, { ReactNode } from 'react'
-import OrderSection from './OrderSection';
-import StepContainer from './step-section/StepContainer';
-import ProductContainer from './product-section/ProductContainer';
+import React, { ReactNode } from "react";
+import OrderSection from "./OrderSection";
+import StepContainer from "./step-section/StepContainer";
+import ProductContainer from "./product-section/ProductContainer";
 
-interface MainProps {
-    children: ReactNode;
-}
+interface MainProps {}
 
-const Main:React.FC<MainProps> = ({children}) => {
+const Main: React.FC<MainProps> = () => {
+  return (
+    <main className="min-w-[360px] px-2 sm:px-5 max-w-80 flex flex-col items-center sm:max-h-96">
+      <OrderSection />
+      <StepContainer />
+      <ProductContainer />
+    </main>
+  );
+};
 
-
-    return <main className='min-w-[360px] px-[20px] max-w-80 max-h-96'>
-       <OrderSection />
-       <StepContainer />
-       <ProductContainer>{children}</ProductContainer>
-    {children}</main>
-}
-
-
-export default Main
+export default Main;

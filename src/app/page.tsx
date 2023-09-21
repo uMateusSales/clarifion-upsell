@@ -1,8 +1,9 @@
+import Main from "./components/Main";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
-    </main>
-  )
+    <div className="flex min-w-[360px] h-[1519px] bg-white min-h-screen  p-[24px]">
+      <Main />
+    </div>
+  );
 }
