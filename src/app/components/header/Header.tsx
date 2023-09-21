@@ -15,9 +15,9 @@ import ArrowHeader from "./ArrowHeader";
 
 const Header = () => {
   return (
-    <header className="flex flex-row max-h-[10] justify-between md:justify-around py-2.5 md:cursor-pointer bg-slate-800 ">
+    <header className="flex flex-row max-h-fit  justify-center md:justify-around  md:cursor-pointer bg-slate-800 ">
       <Swiper
-        className="flex flex-row cursor-grab pointer-events-auto min-w-[360px] max-h-[10] justify-between md:justify-around md:p-0 py-2.5  bg-slate-800"
+        className="flex flex-row cursor-grab min-w-[360px] max-h-[42px]  justify-between md:justify-around md:p-0 bg-slate-800"
         modules={[Navigation, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}

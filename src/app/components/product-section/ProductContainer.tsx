@@ -1,8 +1,8 @@
 import React from "react";
 import PromoCard from "./PromoCard";
 import Image from "next/image";
-import ProductInfo from "./ProductInfo";
 import ProductInfoContainer from "./ProductInfo";
+import ProductCheckList from "./ProductCheckList";
 
 const ProductContainer: React.FC = () => {
   return (
@@ -21,6 +21,7 @@ const ProductContainer: React.FC = () => {
         />
       </div>
       <ProductInfoContainer />
+      <ProductCheckList />
     </section>
   );
 };

@@ -1,18 +1,22 @@
 import React from "react";
+import StarsContainer from "./StarsContainer";
+import StockContainer from "./StockContainer";
 
 const RateContainer = () => {
   return (
-    <div className="flex flex-col gap-3">
-      <div className="flex flex-row justify-between  gap-7">
+    <div className="grid-cols-2 gap-3 gap-y-3">
+      <div className="flex flex-col gap-2.5">
         <div>
-          <p>Clarifion Air Ionizer</p>
+          <p className=" min-w-[120px] break-keep text-black text-sm font-normal font-['Manrope'] capitalize leading-tight">
+            Clarifion Air Ionizer
+          </p>
         </div>
-        <div className="flex gap-2">
-          <p>$180</p>
-          <p>$84</p>
+
+        <div>
+          <StarsContainer />
         </div>
+        <StockContainer />
       </div>
-      <div>Estrelas e stock</div>
     </div>
   );
 };
