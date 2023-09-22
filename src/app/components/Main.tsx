@@ -12,7 +12,7 @@ const Main: React.FC<MainProps> = () => {
   const { width, height } = useWindowSize();
 
   return (
-    <main className=" max-w-full gap-6 px-2 sm:px-5 max-w-80 flex flex-col items-center max-h-[1800px] py-8 bg-neutral-50">
+    <main className=" gap-6 px-2 sm:px-5 flex flex-col items-center max-h-[1800px] py-8 bg-neutral-50">
       <OrderSection />
       {width < 768 && <PromoCard />}
 
