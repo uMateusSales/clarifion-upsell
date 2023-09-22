@@ -4,7 +4,7 @@ import CheckBlue from "../icons/CheckBlue";
 
 const ProductCheckList = () => {
   return (
-    <div className="flex flex-col gap-4 self-start sm:self-auto  min-w-[320px]">
+    <div className="flex flex-col gap-4 self-start md:self-auto  min-w-[320px]">
       <div className="flex gap-3">
         <CheckBlue />
         <span className="text-neutral-600 text-xs font-normal font-['Manrope'] leading-tight">

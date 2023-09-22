@@ -1,13 +1,17 @@
+"use client";
 import React from "react";
 import PromoCard from "./PromoCard";
 import Image from "next/image";
 import ProductInfoContainer from "./ProductInfo";
 import ProductCheckList from "./ProductCheckList";
 import SavingsContainer from "./SavingsContainer";
+import ButtonDiscount from "./ButtonDiscount";
+import CardContainer from "./CardContainer/CardContainer";
+import GuaranteeContainer from "./guarantee-container/GuaranteeContainer";
 
 const ProductContainer: React.FC = () => {
   return (
-    <section className="flex min-w-[320px] h-[1062px] flex-col items-center gap-6">
+    <section className="flex min-w-[320px]  flex-col items-center gap-6">
       <div>
         <PromoCard />
       </div>
@@ -28,6 +32,9 @@ const ProductContainer: React.FC = () => {
       <ProductInfoContainer />
       <ProductCheckList />
       <SavingsContainer />
+      <ButtonDiscount />
+      <CardContainer />
+      <GuaranteeContainer />
     </section>
   );
 };

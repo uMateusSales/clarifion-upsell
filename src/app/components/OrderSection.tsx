@@ -2,7 +2,7 @@ import React from "react";
 
 const OrderSection = () => {
   return (
-    <section className="flex flex-col gap-6 w-[320px] sm:min-w-full">
+    <section className="flex flex-col gap-6  sm:min-w-full">
       <p className="pt-[32px] pb-[24px] self-stretch text-center text-black text-[32px] font-normal font-[Manrope] capitalize leading-[44.80px]">
         Wait ! your order in progress.
       </p>

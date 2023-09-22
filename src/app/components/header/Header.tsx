@@ -22,9 +22,10 @@ const Header = () => {
         spaceBetween={0}
         slidesPerView={1}
         breakpoints={{
-          920: {
-            slidesPerView: 3,
+          1200: {
+            slidesPerView: 4,
           },
+          920: { slidesPerView: 2 },
         }}
         autoplay={{
           delay: 1500,
