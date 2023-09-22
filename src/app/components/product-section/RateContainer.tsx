@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import StarsContainer from "./StarsContainer";
 import StockContainer from "./StockContainer";
+import useWindowSize from "@/app/hooks/useWindowSize";
 
 const RateContainer = () => {
+  const { width, height } = useWindowSize();
+
+  const [altura, setAltura] = useState<number>();
+  const [largura, setLargura] = useState<number>();
+  useEffect(() => {
+    setAltura(height);
+    setLargura(width);
+  }, [width, height]);
+
   return (
     <div className="grid-cols-2 gap-3 gap-y-3">
       <div className="flex flex-col gap-2.5">
