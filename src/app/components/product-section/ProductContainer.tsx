@@ -26,7 +26,7 @@ const ProductContainer: React.FC = () => {
   return (
     <>
       <StepContainer />
-      <section className="flex min-w-[320px]  flex-col items-center gap-6 md:px-20 md:grid-cols-2 md:grid">
+      <section className="flex min-w-[320px]  flex-col items-center gap-6 md:gap-3 md:px-5 md:grid-cols-2 md:grid">
         <div className="flex flex-col gap-6 md:self-start">
           <div className="flex max-w-[575px] max-h-[591px] rounded relative md:self-start ">
             <Image
@@ -44,7 +44,7 @@ const ProductContainer: React.FC = () => {
           </div>
           {width > 768 && <FeedBackCard />}
         </div>
-        <div className="flex min-w-[320px]  flex-col items-center gap-6">
+        <div className="flex min-w-[320px] md:h-full  flex-col items-center gap-6">
           {width > 768 && <PromoCard />}
           <ProductInfoContainer />
           <ProductCheckList />

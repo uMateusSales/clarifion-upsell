@@ -7,7 +7,7 @@ import ProductImageWithBack from "./ProductImageWithBack";
 
 const ProductInfoContainer = () => {
   return (
-    <section className="flex flex-col  min-w-[320px] gap-4">
+    <section className="flex flex-col  min-w-[320px] gap-4 md:self-start">
       <div className="flex justify-between  gap-4">
         <div className="flex justify-start gap-4">
           <ProductImageWithBack />
