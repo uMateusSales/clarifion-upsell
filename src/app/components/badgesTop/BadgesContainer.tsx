@@ -17,7 +17,7 @@ const BadgesContainer = () => {
           }}
         />
       </div>
-      <div className="flex flex-row gap-4 relative">
+      <div className="flex flex-row gap-4">
         <Image
           width={80}
           height={16}
