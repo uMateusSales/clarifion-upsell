@@ -6,7 +6,7 @@ const PromoCard: React.FC<PromoCardProps> = () => {
   return (
     <>
       {" "}
-      <article className="text-center w-80 sm:w-auto md:text-[32px]  md:max-w-[550px]">
+      <article className="text-center box-content self-start w-80 sm:w-auto md:text-[32px] justify-start  md:max-w-[550px]">
         <span className="text-blue-500 text-2xl font-normal font-[Manrope] capitalize leading-[33.60px]">
           ONE TIME ONLY
         </span>
